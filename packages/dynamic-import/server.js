@@ -219,3 +219,5 @@ onMessage("client-refresh", () => {
     delete cachesByPlatform[platform];
   });
 });
+exports.ModuleCache = cachesByPlatform;
+exports.dynamicImportInfo = dynamicImportInfo;

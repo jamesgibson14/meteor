@@ -17,6 +17,9 @@ export function connect(...connectArgs) {
     for (let i = originalLength; i < stack.length; ++i) {
       const entry = stack[i];
       const originalHandle = entry.handle;
+      if(originalHandle.name){
+        entry.name = originalHandle.name
+      }
 
       if (originalHandle.length >= 4) {
         // If the original handle had four (or more) parameters, the

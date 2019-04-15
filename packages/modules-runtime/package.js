@@ -11,7 +11,7 @@ Npm.depends({
 });
 
 Package.onUse(function(api) {
-  api.addFiles(".npm/package/node_modules/install/install.js", [
+  api.addFiles("install.js", [
     "client",
     "server"
   ], {
